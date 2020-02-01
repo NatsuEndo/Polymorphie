@@ -1,12 +1,12 @@
 package main;
 
-public class Pikachu extends Pokemon {
+public class Pikachu extends ElectroType {
 
 	private String name = Pikachu.class.getSimpleName();
 	
 	//polymorphism
 	public void attack() {
-		System.out.println(name + " attacks with thunder shock!");
+		super.attack("thunder");
 	}
 	
 	
